@@ -21,6 +21,9 @@ window.onload = function() {
 	gameObjects.push(snowfall);
 	collisionMgr.registerObject(snowfall);
 	
+	var ground = new Ground(bgctx, 20, 0);
+	gameObjects.push(ground);
+	
 	mainLoop();
 }
 
